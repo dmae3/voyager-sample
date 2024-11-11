@@ -1,0 +1,7 @@
+voyager
+datasets
+numpy
+pandas
+rich
+typer
+openai

@@ -1,0 +1,11 @@
+services:
+  vector-search:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../data:/workspace/data
+      - ../app:/workspace/app
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    command: python -m app.cli
